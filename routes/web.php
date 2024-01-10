@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [AdminController::class, 'index']);
 Route::get('/daftarUser', [AdminController::class, 'user']);
 Route::get('/daftarAdmin', [AdminController::class, 'admin']);
+
+Route::get('/mahasiswa', [AdminController::class, 'mahasiswa']);

@@ -19,6 +19,9 @@ class AdminController extends Controller
             'admin.dashboard',
             [
                 'title' => 'Dashboard',
+                'breadCrump' => [
+                    'home' => '/',
+                ],
             ]
 
         );
@@ -38,6 +41,16 @@ class AdminController extends Controller
     {
         return view(
             'admin.database.daftarAdmin',
+            [
+                'title' => 'Daftar Admin',
+            ]
+
+        );
+    }
+    public function mahasiswa()
+    {
+        return view(
+            'admin.mahasiswa.daftarMahasiswa',
             [
                 'title' => 'Daftar Admin',
             ]
